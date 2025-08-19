@@ -16,8 +16,6 @@ export function Topbar({ auth }) {
   function goToHome(path = "/") {
     navigator(path);
     window.location.reload();
-    //If you go to the page you are on, react will not reload that page,
-    //it will not change anything.
   }
   const [searchString, setSearchString] = useState("");
   const [needClear, setClear] = useState(false);

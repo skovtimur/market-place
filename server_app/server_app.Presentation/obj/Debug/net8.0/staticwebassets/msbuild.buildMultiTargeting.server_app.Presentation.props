@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/server_app.Presentation.props" />
-</Project>

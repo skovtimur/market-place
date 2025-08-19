@@ -11,9 +11,6 @@ export function SellerProductCategoriesComponent({
   search,
   priceNoMoreThenOrEqual,
 }) {
-  //useEffect dependencies: From, To, Search, PriceNoMoreTheOrEqual
-  //Pagination
-  //Response codes
   const [codeAndText, setCodeAndText] = useResponseCode();
   const [categories, setCategories] = useState([]);
   const [isForOwner, setIsForOwner] = useState(false);

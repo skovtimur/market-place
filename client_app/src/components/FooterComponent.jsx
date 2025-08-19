@@ -15,23 +15,23 @@ export function FooterComponent({}) {
           <h2>Social media</h2>
           <ul className="social-media-list">
             <li className="media-icon">
-              <a href="https://github.com/TimurSkovorodnikov07">
+              <a href="https://github.com/skovtimur">
                 <img src={githubIcon} />
               </a>
             </li>
             <li className="media-icon">
-              <a href="https://github.com/TimurSkovorodnikov07">
+              <a href="https://github.com/skovtimur">
                 <img src={githubIcon} />
               </a>
             </li>
 
             <li className="media-icon">
-              <a href="https://github.com/TimurSkovorodnikov07">
+              <a href="https://github.com/skovtimur">
                 <img src={githubIcon} />
               </a>
             </li>
             <li className="media-icon">
-              <a href="https://github.com/TimurSkovorodnikov07">
+              <a href="https://github.com/skovtimur">
                 <img src={githubIcon} />
               </a>
             </li>

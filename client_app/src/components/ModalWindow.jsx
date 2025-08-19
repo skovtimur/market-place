@@ -5,11 +5,11 @@ export default function ModalWindow({ isOpen, onClosed, children }) {
   const [isExiting, setIsExiting] = useState(false);
 
   const handleClose = () => {
-    setIsExiting(true); // Start exit animation
+    setIsExiting(true);
     setTimeout(() => {
-      setIsExiting(false); // Reset exit state
-      onClosed(); // Trigger the parent's close handler
-    }, 300); // Match duration of exit animation
+      setIsExiting(false);
+      onClosed();
+    }, 300);
   };
 
   return (
@@ -22,7 +22,7 @@ export default function ModalWindow({ isOpen, onClosed, children }) {
           className={`modal-content-wrapper ${
             isExiting ? "slide-out" : "slide-in"
           }`}
-          onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
+          onClick={(e) => e.stopPropagation()}
         >
           <div className="modal-content">{children}</div>
           <button

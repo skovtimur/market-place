@@ -138,8 +138,6 @@ else
 
 app.UseHttpsRedirection();
 app.ApplyMigration();
-//for the efcore use migrations in a docker container, without this postgres will be without changed tables
-//https://youtube.com/watch?v=WQFx2m5Ub9M
 
 app.UseCors();
 app.UseRouting();
@@ -150,6 +148,4 @@ app.MapHealthChecks("/health");
 app.MapControllers();
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
-//Там был срачь с сохранением колонки с DateTime, добавил потому строчку выше ^
-
 app.Run();
